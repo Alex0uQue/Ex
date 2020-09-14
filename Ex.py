@@ -30,7 +30,7 @@ def jeux(t):
             print("c'est trop petit")
         elif res>nb:
             print("c'est trop grand")
-    if t>=10:
+    if c>=t:
         print("tu a perdu, le nombre était",nb) 
     return ""
 
@@ -65,10 +65,10 @@ print("votre prix ttc est de "+str(ttc)+" euros")"""
 
 def chasseur(p,c,v,a):
     k=p*1+c*3+v*5+a*10
-    print("vous avez utilisez",k,"points")
+    print("vous avez utilisé",k,"points")
     k=k//100
     res=k*200
-    print("vous devez payez",res,"€ pour",k,"permis")
+    print("vous devez payer",res,"€ pour",k,"permis")
     return ""
 
 #print(chasseur(53,12,3,10))
