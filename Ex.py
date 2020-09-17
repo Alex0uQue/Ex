@@ -1,12 +1,12 @@
 from random import * 
-
+from math import *
 
 
 
 #Exercice 1 
 
 def volume(r,h):
-    res=(3.14*r**2*h)/3
+    res=(pi*r**2*h)/3
     return res 
 
 #print(volume(14,12))
@@ -34,7 +34,7 @@ def jeux(t):
         print("tu a perdu, le nombre était",nb) 
     return ""
 
-#print(jeux(10))
+#print(jeux(5))
 
 
 
@@ -42,11 +42,12 @@ def jeux(t):
 #Exercice 3
         
 def sapin(x):
+    x=x*2
     for i in range(1, x + 1, 2):
         print((i * "*").center(x))
     return ""
 
-#print(sapin(50))
+print(sapin(3))
     
 
 
@@ -64,6 +65,8 @@ print("votre prix ttc est de "+str(ttc)+" euros")"""
 #Exercice 5
 
 def chasseur(p,c,v,a):
+    """cette fonction calcul le prix que dois payer le chasseur en fonction des points de permis utilisé ; 
+       p pour poules, c pour chiens, v pour vaches et a pour amis"""
     k=p*1+c*3+v*5+a*10
     print("vous avez utilisé",k,"points")
     k=k//100
